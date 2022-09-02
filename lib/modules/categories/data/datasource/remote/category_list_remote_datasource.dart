@@ -1,5 +1,5 @@
-import '../../../../../core/data/remote/dio_client.dart';
-import '../../../../../core/data/utils/api_endpoints.dart';
+import '../../../../../repository/remote/networks/api_endpoints.dart';
+import '../../../../../repository/remote/networks/dio_client.dart';
 
 abstract class CategoryListRemoteDataSource {
   Future<dynamic> fetchCategoryList();

@@ -1,9 +1,9 @@
 // part of 'home.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:shoppingnp/core/utils/extensions/double.dart';
+import 'package:shoppingnp/utils/extensions/double.dart';
 
-import '../../../core/presentation/resources/colors.dart';
+import '../../../app_config/colors.dart';
 import '../data/models/product/product.dart';
 
 class NewProductsView extends StatelessWidget {

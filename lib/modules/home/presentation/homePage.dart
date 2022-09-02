@@ -2,8 +2,8 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:shoppingnp/modules/home/presentation/popular_view.dart';
 
-import '../../../core/presentation/resources/colors.dart';
-import '../../../core/presentation/resources/constants/mocks/mock.dart';
+import '../../../app_config/colors.dart';
+import '../../../views/screens/home/constants/mocks/mock.dart';
 import '../widget/featured_product_carousel.dart';
 import 'categories_view.dart';
 import 'for_you_view.dart';

@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-import '../../domain/auth_repository.dart';
+import '../../../../repository/remote/auth_repository.dart';
 
 
 class AuthNotifier extends StateNotifier<bool> {

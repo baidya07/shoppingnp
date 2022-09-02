@@ -1,16 +1,16 @@
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
-import '../../../core/di/injection.dart';
+import '../../../di/injection.dart';
 import '../data/datasource/local/auth_local_datasource.dart';
 import '../data/repository/auth_repository_impl.dart';
-import '../domain/auth_repository.dart';
+import '../../../repository/remote/auth_repository.dart';
 import '../presentation/provider/auth_notifier.dart';
 
-// * local data source
+// * local_storage data source
 final _localAuthDataSource = Provider<AuthLocalDataSource>((ref) =>
     AuthLocalDataSourceImpl(secureStorage: ref.watch(sharedPrefsProvider)));
 final _authLocalDataSource = Provider<AuthLocalDataSource>((ref) => AuthLocalDataSourceImpl(secureStorage: ref.watch(sharedPrefsProvider)));
-// // * local data source
+// // * local_storage data source
 
 // * remote data source
 // final _loginRemoteDataSource = Provider<LoginRemoteDataSource>((ref) =>

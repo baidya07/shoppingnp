@@ -1,6 +1,7 @@
 
-import '../../../../core/data/remote/network_info.dart';
-import '../../domain/auth_repository.dart';
+
+import '../../../../repository/remote/auth_repository.dart';
+import '../../../../repository/remote/networks/network_info.dart';
 import '../datasource/local/auth_local_datasource.dart';
 
 
@@ -42,7 +43,7 @@ class AuthRepositoryImpl extends AuthRepository {
   //       // localDataSource.clearTokenCache();
   //       // return ApiResult.success(data: remoteData['message']);
   //     } catch (e) {
-  //       await localDataSource.clearTokenCache(); //clear local cache anyway
+  //       await localDataSource.clearTokenCache(); //clear local_storage cache anyway
   //       if (e is DioError && e.type == DioErrorType.response) {
   //         return ApiResult.failure(
   //             error:

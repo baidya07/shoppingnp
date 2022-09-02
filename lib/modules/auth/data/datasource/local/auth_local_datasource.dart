@@ -1,5 +1,7 @@
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
-import '../../../../../core/data/utils/storage_const.dart';
+
+import '../../../../../repository/remote/networks/storage_const.dart';
+
 
 abstract class AuthLocalDataSource {
   Future<String?> getLastAccessToken();

@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:form_builder_validators/localization/l10n.dart';
-import 'package:shoppingnp/core/presentation/resources/theme_data.dart';
-import 'package:shoppingnp/core/presentation/routes/router.gr.dart';
+import 'package:shoppingnp/app_config/theme_data.dart';
+import 'package:shoppingnp/routes/router.gr.dart';
 
-import 'core/di/di.dart';
+import 'di/di.dart';
+
+
 
 // import 'core/di/di.dart';
 
@@ -43,6 +45,7 @@ Future<void> mainCommon() async {
 //   //opening small boxes to synchronously fetch some important values
 //   // await Hive.openBox(DbConstants.userProfileBox); // opening user information
 // }
+
 
 class Application extends StatelessWidget {
   const Application({Key? key}) : super(key: key);
