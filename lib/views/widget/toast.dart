@@ -24,7 +24,8 @@ class CustomToast {
           ),
           Text(
             toastMessage,
-            style: Theme.of(context)
+            style: Theme
+                .of(context)
                 .textTheme
                 .bodyText2
                 ?.apply(color: Colors.white),
@@ -39,7 +40,8 @@ class CustomToast {
       toastDuration: const Duration(seconds: 2),
     );
   }
-  static void showSuccessToast(String message, {Color? color}) {
+}
+   void showSuccessToast(String message, {Color? color}) {
     Fluttertoast.showToast(
         msg: message,
         toastLength: Toast.LENGTH_LONG,
@@ -50,7 +52,7 @@ class CustomToast {
         fontSize: 16.0);
   }
 
-  static void showErrorToast(String message, {Color? color, double? opacity}) {
+   void showErrorToast(String message, {Color? color, double? opacity}) {
     Fluttertoast.showToast(
         msg: message,
         toastLength: Toast.LENGTH_LONG,
@@ -60,7 +62,7 @@ class CustomToast {
         fontSize: 16.0);
   }
 
-  static void showWarningToast(String message, {Color? color}) {
+   void showWarningToast(String message, {Color? color}) {
     Fluttertoast.showToast(
         msg: message,
         toastLength: Toast.LENGTH_LONG,
@@ -70,5 +72,5 @@ class CustomToast {
         fontSize: 16.0);
   }
 
-}
+
 
